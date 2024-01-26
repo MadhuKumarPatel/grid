@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: border-box;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .md{
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.61);
+        }
+        .main{
+            height: 600px;
+            width: 800px;
+            margin-left: 400px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 40px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+        }
+        .box1{
+            background-color: rgb(212, 42, 212);
+            color: white;
+            border: 2px solid black;
+            grid-column-start: 1;
+            grid-column-end: 4 ;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .box2{
+            background-color: rgb(39, 168, 228);
+            color: white;
+            border: 2px solid black;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            text-align: center;
+            padding-top: 130px;
+        } 
+        .box3{
+            background-color: rgb(67, 42, 212);
+            color: white;
+            border: 2px solid black;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            text-align: center;
+            padding-top: 50px;
+        } 
+        .box4{
+            background-color: rgb(67, 42, 212);
+            color: white;
+            border: 2px solid black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: center;
+            padding-top: 50px;
+        } 
+        .box5{
+            background-color: rgb(67, 42, 212);
+            color: white;
+            border: 2px solid black;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            text-align: center;
+            padding-top: 50px ;
+        } 
+        .box6{
+            background-color: rgb(212, 42, 212);
+            color: white;
+            border: 2px solid black;
+            grid-row-start:4 ;
+            grid-row-end: 4;
+            grid-column-start:1 ;
+            grid-column-end: 4;
+            text-align: center;
+            padding-top:50px ;
+        }
+    </style>
+</head>
+<div class="md">
+    <div class="main">
+        <div class="box1">Header</div>
+        <div class="box2">Sidebar</div>
+        <div class="box3">Content-1</div>
+        <div class="box4">Content-2</div>
+        <div class="box5">Content-3</div>
+        <div class="box6">Footer</div>
+    </div>
+</div>
+</body>
+
+</html>
